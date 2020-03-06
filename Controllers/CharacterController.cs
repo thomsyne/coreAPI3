@@ -19,7 +19,7 @@ namespace core.Controllers
             _characterService = characterService;
         }
 
-        [Route("GetAll")]
+        [Route("characters")]
         public async Task<IActionResult> Get()
         {
             return Ok(await _characterService.GetAllCharacters());
